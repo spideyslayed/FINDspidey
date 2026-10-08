@@ -22,7 +22,7 @@ async function startServer() {
     );
 
     const host =
-      process.env.HOST ?? "127.0.0.1";
+      process.env.HOST ?? "0.0.0.0";
 
     await app.listen({
       port,
